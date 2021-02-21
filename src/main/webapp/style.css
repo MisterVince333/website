@@ -1,0 +1,322 @@
+/* --- GENERAL ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f3f3f3;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.containerpage {
+    width: 95%;
+    max-width: 1000px;
+    margin: 5px auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.25em;
+}
+
+nav ul li {
+    margin: 0.5em;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+ul li:hover, ul li:active, nav ul li.here a {
+    color: #1769c5;
+}
+
+h1 {
+    text-decoration: underline 3px solid #1769c5;
+    text-align: center;
+}
+
+footer {
+    font-size: small;
+    margin: 25px 0px 0px 3px;
+}
+
+/* --- HOME ---*/
+p {
+    margin: 5% 3%;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+/* --- TOEVOEGEN ---*/
+form {
+    margin: 5% 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.10em;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+input {
+    height: 20px;
+    border-radius: 3px;
+    border: 2px solid black;
+    color: black;
+}
+
+#product {
+    width: 55%;
+    max-width: 200px;
+    padding-left: 2px;
+}
+
+#product_amount {
+    width: 40px;
+    text-align: center;
+}
+
+select {
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+#price {
+    width: 70px;
+    text-align: right;
+    padding-right: 2px;
+    background: url(icons/euro-icon.svg) no-repeat scroll 7px 7px;
+    background-size: 15px;
+    background-position: 0;
+}
+
+#date_of_purchase:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: #5C96D6;
+    border: 2px solid #1769c5;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75em;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #68a9ee;
+    cursor: pointer;
+}
+
+/* --- OVERZICHT ---*/
+h2 {
+    font-size: 1em;
+    background-color: gainsboro;
+    margin: 40px 10px 20px 10px;
+    padding: 2px 10px;
+    border-top: 2px solid black;
+}
+
+
+table {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+tr {
+    height: 64px;
+}
+
+td#td_image {
+    width: 7.5%;
+}
+
+td#td_amount {
+    width: 2.5%;
+    text-align: center;
+}
+
+td#td_product {
+}
+
+td#td_edit {
+    width: 10%;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+td#td_date_of_purchase {
+    width: 20%;
+    color: grey;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+td#td_price {
+    width: 10%;
+}
+
+td#td_remove {
+    width: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+img {
+    height: 48px;
+    vertical-align: middle;
+}
+
+img.delete {
+    width: 20px;
+}
+
+@media (min-width: 768px) {
+    /* --- GENERAL ---*/
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    nav ul li {
+        margin: 10px;
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+    }
+
+    ul li:hover, ul li:active, nav ul li.here a {
+        color: #1769c5;
+    }
+
+    h1 {
+        text-decoration: underline 3px solid #1769c5;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    /* --- HOME ---*/
+    p {
+        margin: 10px 30px;
+        max-width: 700px;
+        line-height: 1.4;
+    }
+
+    /* --- TOEVOEGEN ---*/
+    form {
+        margin: 30px 0 0 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    span {
+        margin-bottom: 15px;
+    }
+
+    label {
+        width: 125px;
+        font-size: 1.10em;
+        display: inline-block;
+        text-align: right;
+        font-family: 'Source Sans Pro';
+        font-weight: bold;
+    }
+
+    input {
+        height: 20px;
+        border-radius: 3px;
+        border: 2px solid black;
+        color: black;
+    }
+
+    #product_amount {
+        width: 40px;
+        text-align: center;
+    }
+
+    select {
+        border-radius: 3px;
+        border: 2px solid black;
+    }
+
+    select:hover {
+        cursor: pointer;
+    }
+
+    #price {
+        width: 70px;
+        text-align: right;
+        padding-right: 2px;
+        background: url(icons/euro-icon.svg) no-repeat scroll 7px 7px;
+        background-size: 15px;
+        background-position: 0;
+    }
+
+    #date_of_purchase:hover {
+        cursor: pointer;
+    }
+
+    button {
+        width: 70px;
+        height: 25px;
+        background-color: #5C96D6;
+        border: 2px solid #1769c5;
+        border-radius: 3px;
+        color: white;
+        font-weight: bold;
+        font-size: 0.75em;
+        margin: 10px 0 0 130px;
+    }
+
+    button:hover {
+        background-color: #68a9ee;
+        cursor: pointer;
+    }
+
+    /* --- OVERZICHT ---*/
+    h2 {
+        font-size: 1em;
+        background-color: gainsboro;
+        margin: auto 30px;
+        padding: 2px 10px;
+        border-top: 2px solid black;
+    }
+}
